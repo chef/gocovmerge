@@ -95,6 +95,8 @@ func dumpProfiles(profiles []*cover.Profile, out io.Writer) {
 func main() {
 	flag.Parse()
 
+	fmt.Print("Running")
+
 	var merged []*cover.Profile
 
 	for _, file := range flag.Args() {
